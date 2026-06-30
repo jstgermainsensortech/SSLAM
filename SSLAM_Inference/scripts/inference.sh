@@ -7,7 +7,7 @@ export CUDA_VISIBLE_DEVICES=0
 # EAT-finetuned could make inference well even given truncated audio clips.
 
 
-main_dir=/path/to/SSLAM/
+main_dir=~/models/SSLAM
 
 echo "main_dir: $main_dir"
 sslam_dirname=SSLAM_Inference
@@ -16,7 +16,7 @@ label_file=${main_dir}/${sslam_dirname}/inference/labels.csv
 
 
 ### finetuned ckpt (AS2M_Ft)
-finetuned_model_path=/path/to/SSLAM_AS2M_Finetuned/checkpoint_best.pt
+finetuned_model_path=~/models/SSLAM/ckp_pth/checkpoint_last.pt
 
 
 model_dir=${main_dir}/${sslam_dirname}/

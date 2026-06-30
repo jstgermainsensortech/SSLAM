@@ -16,7 +16,7 @@ from torch.utils.data import Dataset, DataLoader
 import os
 import sys
 
-fairseq_path = '/path/to/SSLAM/SSLAM_Inference/cloned_fairseq_copy/fairseq/' ## Please update the absolute path to fairseq here
+fairseq_path = '~/models/SSLAM/SSLAM_Inference/cloned_fairseq_copy/fairseq/' ## Please update the absolute path to fairseq here
 
 if os.path.exists(fairseq_path):
     sys.path.append(fairseq_path)
